@@ -14,10 +14,11 @@
             li.my-list{
                 background-color:pink;
             }
-
-       
             div#new-div,li.new-list{
                 background-color:blue;
+            }
+            ul.my-kids>li {
+                background-color:green;
             }
             </style>
     </head>
@@ -31,6 +32,7 @@
                 <li><a href="#id">id</a></li>
                 <li><a href="#class">class</a></li>
                 <li><a href="#compound">compound</a></li>
+                <li><a href="#child">child</a></li>
             </ul>
         </nav> 
     </header>           
@@ -89,6 +91,28 @@
                     <li class="new-list">I'm in an li with a class named my-list</li>
                     <li class="new-list">I'm in an li with a class named my-list</li>
                     <li class="new-list">I'm in an li with a class named my-list</li>
+                </ul>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend><a id="child">child</a></legend>
+            <p>A child selector allows us to access the next immediade elements inseide the current element.</p>
+            <p>Here's how the CSS is applied to the element:</p>
+            <pre><code>ul.my-kids>li{
+    background-color:green;
+}</code></pre>
+
+
+            <p>Here's what it looks like:</p>
+           
+            <div>
+                <ul class="my-kids">
+                    <li>I'm in an li inside a ul with a class of my-kids</li>
+                    <li>I'm in an li inside a ul with a class of my-kids</li>
+                    <li>I'm in an li inside a ul with a class of my-kids</li>
+                    
                 </ul>
             </div>
         </fieldset>
