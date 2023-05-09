@@ -13,7 +13,13 @@
             }
             li.my-list{
                 background-color:pink;
-            }</style>
+            }
+
+       
+            div#new-div,li.new-list{
+                background-color:blue;
+            }
+            </style>
     </head>
     <body>
         <header>
@@ -62,6 +68,27 @@
                     <li class="my-list">I'm in an li with a class named my-list</li>
                     <li class="my-list">I'm in an li with a class named my-list</li>
                     <li class="my-list">I'm in an li with a class named my-list</li>
+                </ul>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend><a id="compound">compound</a></legend>
+            <p>A compaund selectors allows multiple selectors separated by commas.In this way we can  apply the same rules to several selectors.</p>
+            <p>Here's how the CSS is applied to the element:</p>
+            <pre><code>div#new-div,li.new-list{
+    background-color:blue;
+}</code></pre>
+
+
+            <p>Here's what it looks like:</p>
+            <div id="new-div">I'm inside of div with an id of new div</div>
+            <div>
+                <ul>
+                    <li class="new-list">I'm in an li with a class named my-list</li>
+                    <li class="new-list">I'm in an li with a class named my-list</li>
+                    <li class="new-list">I'm in an li with a class named my-list</li>
                 </ul>
             </div>
         </fieldset>
